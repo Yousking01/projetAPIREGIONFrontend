@@ -1,0 +1,67 @@
+.header-row {
+    background: #0D8BFF;
+    color: #fff;
+    font-size: 18px;
+  }
+  
+  ion-col {
+    border: 1px solid #ECEEEF;
+  }
+  .titre{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 22px;
+    line-height: 27px;
+    text-align: center;
+    margin: auto;
+    color: #0D8BFF;
+
+// position: absolute;
+// left: 14.49%;
+// right: 12.15%;
+// top: 8.53%;
+// bottom: 85.64%;
+
+  }
+  ion-searchbar{
+    margin: auto;
+    width: 40%;
+    --ion-item-background: #cccccc;
+  }
+  .iconr{
+    // display: flex;
+    // align-items: flex-end;
+    // justify-content: end;
+    // margin: auto;
+    // left: 60%;
+    // width: 20%;
+    position: relative;
+    left: 30%;
+// width: 64px;
+// height: 30px;
+// left: 375px;
+// top: 204px;
+
+background: #4087FC;
+border-radius: 15px;
+  }
+//   ion-row{
+//     --ion-item-background: rgba(17, 14, 14, 0);
+//   }
+// ion-toolbar{
+//   --background: linear-gradient(0deg, rgba(0,0,0,0.7), rgba(0,0,0,0.1)),
+//      url('./../../assets/img/drapeaumali.jpg') no-repeat center center / cover ;
+//   color: #FFFF;
+//     }
+    ion-content{
+      --background: linear-gradient(0deg, rgba(0,0,0,0.7), rgba(0,0,0,0.1)),
+     url('./../../assets/img/LeMAli.jpg') no-repeat center center / cover ;
+    }
+    .text{
+      color: #FFFF;
+    }
+    ion-toolbar{
+      --background: #0D8BFF;
+      color: #FFFF;
+        }

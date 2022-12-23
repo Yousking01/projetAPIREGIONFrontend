@@ -1,0 +1,221 @@
+// ion-menu {
+//     --width: 300px;
+//     --max-width: 90%;
+  
+//     position: absolute;
+//     top: 0;
+//     left: 0;
+//     width: var(--width);
+//     max-width: var(--max-width);
+//     height: 100%;
+//     z-index: 10;
+//     overflow: hidden;
+//     -webkit-backface-visibility: hidden;
+//     backface-visibility: hidden;
+//     -webkit-transform: translate3d(-var(--width), 0, 0);
+//     transform: translate3d(-var(--width), 0, 0);
+//     -webkit-transition: all 0.2s ease-in-out;
+//     transition: all 0.2s ease-in-out;
+  
+//     &.show-menu {
+//       -webkit-transform: translate3d(0, 0, 0);
+//       transform: translate3d(0, 0, 0);
+//     }
+//   }
+//   .bamako{
+//     // position: relative;
+//     width: 100px;
+//     // // height: 22px;
+//     // // left: 178px;
+//     margin-top: 10%;
+//     display: flex;
+//     margin: auto;
+//     font-family: 'Montserrat';
+//     font-style: normal;
+//     font-weight: 800;
+//     font-size: 36px;
+//     line-height: 22px;
+//     /* identical to box height */
+
+   
+//     color: #0D8BFF;
+
+//   }
+// .bko{
+//   position: relative;
+//   width: 100%;
+//   height: 80%;
+//   margin: auto;
+//   left: 0px;
+//   top: 0px;
+//   // position: absolute;
+//   // top: 0; left: 0;
+
+
+//   border-radius: 0px 0px 16px 16px;
+// }
+/* iOS places the subtitle above the title */
+ion-card-header.ios {
+  display: flex;
+  flex-flow: column-reverse;
+  
+}
+.voirplus{
+  //--background: #FFFFFF;
+  --box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  --border-radius: 11px;
+  margin: auto;
+  // position: relative;
+  width: 70%;
+  margin-top: -20px;
+  z-index: 2;
+  // margin-bottom: 10px;
+  // --padding-top: 10px;
+  // --padding-bottom: 10px;
+  // animation: bgcolor infinite 5s;
+  
+  
+}
+// ion-card{
+//   border-radius: 16px 16px 16px 16px;
+//   --background: #ffffff57;
+//   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  
+// }
+
+// ion-title {
+ 
+
+// }
+
+// ion-card {
+//   width: 100%;
+//   // height: 160px;
+//   height:35%;
+//   box-shadow: none;
+//   border-radius: 12px;
+  
+//   img {
+//       object-fit: cover;
+//       width: 100%;
+//       transform: scale(1.1, 1.1) rotate(45deg);
+//       transition: 100ms all ease-in-out;
+//   }
+// }
+
+// .swiper-slide-active {
+//   transform: scale(1.05, 1.05);
+
+//   ion-card {
+//       img {
+//           transform: scale(1, 1);
+//       }
+//   }
+// }
+
+// .swiper-slide {
+//   transition: 200ms all ease-in-out;
+// }
+
+
+img{
+  border-radius: 16px 16px 16px 16px;
+  width: 100%;
+  height: 50%;
+  // margin: auto;
+  // max-width: 100%;
+  //   height: auto;
+  //   display: block;
+  //   object-fit: cover;
+}
+ .card{
+   width: 100%;
+  height: 60%;
+ }
+ion-card-header{
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 30px ;
+  height: 45%;
+  // background-color: #ffffffa1;
+  position: relative;
+  top: -15px;
+  
+  background:#ced4da;
+  z-index: 0;
+  
+}
+// ion-button{
+//   animation: bgcolor infinite 5s;
+// }
+.region{
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 15px;
+
+  color:  #0D8BFF;
+  text-align: center;
+  margin: auto;
+  
+}
+// ion-content{
+//   margin:0;
+//   padding: 0;
+//   animation: bgcolor infinite 5s;
+
+// }
+// @keyframes bgcolor {
+  
+//   20%{
+//     --background: green;
+//   }
+//   60%{
+//     --background: yellow;
+//   }
+
+//   80%{
+//     --background: red;
+//   }
+// }
+.ion-margin-top{
+  background: #ffffffa2;
+  // opacity: 60%;
+  border-radius: 30px ;
+}
+ion-toolbar{
+  --background: #ced4da;
+ //opacity: 90%;
+ 
+
+
+}
+ion-searchbar{
+  margin: auto;
+  width: 50%;
+  height: 30%;
+  margin-top: -10px;
+  margin-bottom: 15px;
+  // position: relative;
+  // top: 30%;
+  --background: #FFFF;
+
+}
+ion-title{
+  margin: auto;
+  margin-top: 30px;
+  // margin-left: 5%;
+  
+  color: #ffffff;
+  
+   font-weight: 600;
+}
+.bg{
+  --background: linear-gradient(0deg, rgba(0,0,0,0.7), rgba(0,0,0,0.1)),
+     url('./../../assets/img/02.jpg') no-repeat center center / cover ;
+
+}
+ion-toolbar{
+  --background: #0D8BFF;
+  color: #FFFF;
+    }

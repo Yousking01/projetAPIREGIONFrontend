@@ -1,0 +1,61 @@
+.blue{
+    --background: #0D8BFF;
+    color: #FFFF;
+}
+// .bgmenu{
+//     // --background: linear-gradient(0deg, rgba(0,0,0,0.7), rgba(0,0,0,0.1)),
+//     //  url('./../../assets/img/drapeaumali.jpg') no-repeat center center / cover ;
+//     // --background: #0D8BFF;
+//     // color: #FFFF;
+// }
+.success:hover{
+    --background:   #0D8BFF;
+    --color: #FFFF;
+    border-radius: 20px;
+}
+.jaune:hover{
+  --background:   #0D8BFF;
+  --color: #FFFF;
+  border-radius: 20px;
+}
+.rouge:hover{
+  --background:   #0D8BFF;
+  --color: #FFFF;
+  border-radius: 20px;
+}
+// .bglist{
+//     --background: #0D8BFF;
+// }
+// .list{
+//     position: relative;
+//     top: 30%;
+// }
+// .ajoutregion{
+//   --background:   #FFFF;
+//     --color: #0D8BFF;
+// }
+.ajoutregion:hover{
+    
+  --background:   #0D8BFF;
+    --color: #FFFF;
+    border-radius: 20px;
+  //animation: bgcolor infinite 5s;
+}
+// @keyframes bgcolor {
+  
+//   20%{
+//     --background: green;
+//   }
+//   60%{
+//     --background: yellow;
+//   }
+
+//   80%{
+//     --background: red;
+//   }
+// }
+.connet:hover{
+  --background:   #0D8BFF;
+    --color: #FFFF;
+    border-radius: 20px;
+}

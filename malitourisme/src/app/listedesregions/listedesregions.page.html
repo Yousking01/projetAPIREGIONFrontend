@@ -1,0 +1,211 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Liste des Régions</ion-title>
+    <ion-button slot="end">
+      <ion-menu-button menu="main-menu"></ion-menu-button>
+    </ion-button>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+<ion-grid class="ion-text-center">
+
+    <ion-row class="ion-margin">
+      <!-- <ion-col> -->
+        <ion-title>
+          <ion-text class="titre">
+            Selection votre Région à visiter
+          </ion-text>
+        </ion-title>
+      <!-- </ion-col> -->
+    </ion-row>
+    <ion-row>
+      <ion-col size-xs="12" size-ms="12">
+        <!-- (ionChange)="handleChange($event)" -->
+        <!-- <ion-searchbar [debounce]="1000" ></ion-searchbar> -->
+        <ion-searchbar show-clear-button="always" value="Always Show"></ion-searchbar>
+        <ion-button shape="round" class="iconr" (click)="navigateToPage()">Ajouter
+          region</ion-button>
+      </ion-col>
+        <!-- <ion-icon name="mic-outline"></ion-icon> -->
+     
+    </ion-row>
+
+    <ion-row class="header-row" >
+      <ion-col size-sm="2" size-xs="2">
+        <ion-text>Region</ion-text>
+      </ion-col>
+
+      <ion-col size-sm="2" size-xs="2" size-md="2" size-lg="2">
+        <ion-text>Code-Région</ion-text>
+      </ion-col>
+
+      <ion-col size-sm="2" size-xs="2" size-md="2" size-lg="2">
+        <ion-text>Activités</ion-text>
+      </ion-col>
+
+      <ion-col size-sm="2" size-xs="2" size-md="2" size-lg="2">
+        <ion-text>Langue</ion-text>
+      </ion-col>
+
+      <ion-col size-sm="2" size-xs="2" size-md="2" size-lg="2">
+        <ion-text>Superficie</ion-text>
+      </ion-col>
+      <ion-col size-sm="1" size-xs="1" size-lg="1" size-xl="1">
+        <ion-text>N° Population</ion-text>
+      </ion-col>
+      <ion-col size-sm="1" size-xs="1" size-lg="1" size-xl="1">
+        <ion-text></ion-text>
+      </ion-col>
+      
+    </ion-row>
+    <ion-row *ngFor="let liste of listeRegion">
+      <ion-col size-sm="2" size-xs="2" size-md="2" size-lg="2" >
+        <!-- *ngFor="let result of results" -->
+        <ion-text class="text" [routerLink]="[url,liste.id_regions]">
+          <!-- {{ result }} -->
+          {{liste.nomregions}}
+        </ion-text>
+        
+      </ion-col>
+
+      <ion-col size-sm="2" size-xs="2" size-md="2" size-lg="2" size-xl="2">
+        <ion-text class="text">
+          {{liste.coderegion}}
+        </ion-text>
+        
+      </ion-col >
+      <ion-col size-sm="2" size-xs="2" size-md="2" size-lg="2" size-xl="2">
+        <ion-text class="text">
+          {{liste.activiterregion}}
+        </ion-text>
+      </ion-col>
+      <ion-col size-sm="2" size-xs="2" size-md="2" size-lg="2" size-xl="2">
+        <ion-text class="text">
+          {{liste.languemregion}}
+        </ion-text>
+      </ion-col >
+      <ion-col size-sm="2" size-xs="2" size-md="2" size-lg="2" size-xl="2">
+        <ion-text class="text">
+          {{liste.superficieregion}}
+        </ion-text>
+      </ion-col>
+      <ion-col size-sm="1" size-xs="1" size-md="1" size-lg="1" size-xl="1">
+        <ion-text class="text">
+          {{liste.superficieregion}}
+        </ion-text>
+      </ion-col>
+
+        <ion-col size-sm="1" size-xs="1" size-md="1" size-lg="1" size-xl="1" class="text">
+          <ion-icon name="create-outline"></ion-icon>
+          <ion-icon name="trash-outline"></ion-icon>
+        </ion-col>
+  
+        <!-- <ion-col>
+          <ion-text>
+            R$ 200
+          </ion-text>
+        </ion-col> -->
+    </ion-row>
+    <!-- <ion-row>
+      <ion-col size-sm="2" size-xs="2" size-md="2" size-lg="2" class="text">
+        <ion-text>
+          Kayes
+        </ion-text>
+        
+      </ion-col>
+
+      <ion-col size-sm="2" size-xs="2" size-md="2" size-lg="2" size-xl="2" class="text">
+        <ion-text>
+          (1er régions)
+        </ion-text>
+        
+      </ion-col >
+      <ion-col size-sm="2" size-xs="2" size-md="2" size-lg="2" size-xl="2" class="text">
+        <ion-text>
+          Orpayage
+        </ion-text>
+      </ion-col>
+      <ion-col size-sm="2" size-xs="2" size-md="2" size-lg="2" size-xl="2" class="text">
+        <ion-text>
+          Soninké
+        </ion-text>
+      </ion-col >
+      <ion-col size-sm="2" size-xs="2" size-md="2" size-lg="2" size-xl="2" class="text">
+        <ion-text>
+          200000Km2
+        </ion-text>
+      </ion-col>
+      <ion-col size-sm="1" size-xs="1" size-md="1" size-lg="1" size-xl="1" class="text">
+        <ion-text>
+          200000
+        </ion-text>
+      </ion-col>
+
+        <ion-col size-sm="1" size-xs="1" size-md="1" size-lg="1" size-xl="1" class="text">
+          <ion-icon name="create-outline"></ion-icon>
+          <ion-icon name="trash-outline"></ion-icon>
+        </ion-col>
+  
+        <!-- <ion-col>
+          <ion-text>
+            R$ 200
+          </ion-text>
+        </ion-col> 
+    </ion-row>
+    <ion-row>
+      <ion-col size-sm="2" size-xs="2" size-md="2" size-lg="2" class="text">
+        <ion-text>
+          Kayes
+        </ion-text>
+        
+      </ion-col>
+
+      <ion-col size-sm="2" size-xs="2" size-md="2" size-lg="2" size-xl="2" class="text">
+        <ion-text>
+          (1er régions)
+        </ion-text>
+        
+      </ion-col >
+      <ion-col size-sm="2" size-xs="2" size-md="2" size-lg="2" size-xl="2" class="text">
+        <ion-text>
+          Orpayage
+        </ion-text>
+      </ion-col>
+      <ion-col size-sm="2" size-xs="2" size-md="2" size-lg="2" size-xl="2" class="text">
+        <ion-text>
+          Soninké
+        </ion-text>
+      </ion-col >
+      <ion-col size-sm="2" size-xs="2" size-md="2" size-lg="2" size-xl="2" class="text">
+        <ion-text>
+          200000Km2
+        </ion-text>
+      </ion-col>
+      <ion-col size-sm="1" size-xs="1" size-md="1" size-lg="1" size-xl="1" class="text">
+        <ion-text>
+          200000
+        </ion-text>
+      </ion-col>
+
+        <ion-col size-sm="1" size-xs="1" size-md="1" size-lg="1" size-xl="1" class="text">
+          <ion-icon name="create-outline"></ion-icon>
+          <ion-icon name="trash-outline"></ion-icon>
+        </ion-col>
+  
+         <ion-col>
+          <ion-text>
+            R$ 200
+          </ion-text>
+        </ion-col> 
+    </ion-row> -->
+    
+
+  </ion-grid>
+</ion-content>
+<!-- </ion-content> -->
+<ion-footer [translucent]="true">
+  <ion-toolbar>
+    <ion-title>@2022 Youssouf Djiré</ion-title>
+  </ion-toolbar>
+</ion-footer> 

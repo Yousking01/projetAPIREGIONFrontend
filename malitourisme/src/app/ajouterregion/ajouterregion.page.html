@@ -1,0 +1,84 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Ajouter une Région</ion-title>
+    <ion-button slot="end">
+      <ion-menu-button menu="main-menu"></ion-menu-button>
+    </ion-button>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-grid>
+    <ion-row>
+      <ion-col class="col1">
+        <ion-item>
+          <ion-label position="floating">Pays</ion-label>
+          <!-- <ion-input [(ngModel)]="nomPay" name="nomPay" type="text"></ion-input>
+         -->
+
+         <ion-select interface="popover" placeholder="selectionner un pays" [(ngModel)]="nomPay" name="nomPay" >
+          <ion-select-option *ngFor="let pays of ListePays" value="{{pays.nompays}}">{{pays.nompays}}</ion-select-option>
+        </ion-select>
+        
+        </ion-item>
+        <br>
+        <ion-item>
+          <ion-label position="floating">Langues</ion-label>
+          <ion-input [(ngModel)]="langue" name="langue" type="text"></ion-input>
+        </ion-item>
+        <br>
+        <ion-item>
+          <ion-label position="floating">Nom de la Région</ion-label>
+          <ion-input [(ngModel)]="nomRegion" name="nomRegion" type="text"></ion-input>
+        </ion-item>
+        <br><ion-item>
+          <ion-label position="floating">Code Région</ion-label>
+          <ion-input [(ngModel)]="codeRegion" name="codeRegion" type="text" placeholder="+223"></ion-input>
+        </ion-item>
+      </ion-col>
+
+      <ion-col class="col1">
+        <ion-item>
+          <ion-label position="floating">Activités</ion-label>
+          <ion-input [(ngModel)]="activite" name="activite" type="text"></ion-input>
+        </ion-item>
+        <br>
+        <ion-item>
+          <ion-label position="floating">Superficie</ion-label>
+          <ion-input [(ngModel)]="superficie" name="superficie" type="Number" placeholder="en Km2"></ion-input>
+        </ion-item>
+        <br><ion-item>
+          <ion-label position="floating">N° Population</ion-label>
+          <ion-input [(ngModel)]="population" name="population" type="Number"
+            placeholder="1.000.000 de perspnnes"></ion-input>
+        </ion-item>
+        <br>
+        <ion-item>
+          <ion-label position="floating">Description</ion-label>
+          <ion-textarea [(ngModel)]="description" name="description" placeholder="Donner votre desription"></ion-textarea>
+        </ion-item>
+      </ion-col>
+
+      <ion-col class="img">
+        <br>
+        <h1>Ajouter un Image de Votre Région</h1>
+        <br>
+        <!-- <img   src="../../assets/img/Tombouctou4.jpg" alt="La Porte de légende de Tombouctou"> -->
+        <ion-item class="image">
+          <ion-label position="floating">Inserer Image</ion-label>
+          <ion-input (change)="recupereImage($event)" type="file"></ion-input>
+        </ion-item>
+
+        <br>
+        <ion-button shape="round" class="iconr" (click)="ajoutRegion()" >Ajouter
+          region</ion-button>
+      </ion-col>
+
+    </ion-row>
+  </ion-grid>
+</ion-content>
+<ion-footer [translucent]="true">
+  <ion-toolbar>
+    <ion-title>@2022 Youssouf Djiré</ion-title>
+  </ion-toolbar>
+</ion-footer>

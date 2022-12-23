@@ -1,0 +1,101 @@
+<!-- <ion-header>
+  <ion-toolbar>
+    <ion-title>signup</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+</ion-content> -->
+
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Création de compte</ion-title>
+    <ion-button slot="end">
+      <ion-menu-button menu="main-menu"></ion-menu-button>
+    </ion-button>
+  </ion-toolbar>
+</ion-header>
+
+
+
+
+<ion-content class="ion-padding ">
+<html>
+  
+  <div class="login-box">
+    <!-- <h2>Page de Connexion</h2> -->
+    <h1 class="welcome">Bienvenue à nouveau, veuillez entrer vos coordonnées:</h1>
+    <form>
+      <ion-avatar>
+        <img alt="Silhouette of a person's head" src="https://ionicframework.com/docs/img/demos/avatar.svg" />
+      </ion-avatar>
+      <div class="user-box">
+        <input type="text" name="" required="">
+        <label>Nom</label>
+      </div>
+      <div class="user-box">
+        <input type="text" name="" required="">
+        <label>Prenom</label>
+      </div>
+      <div class="user-box">
+        <input type="text" name="" required="">
+        <label>Email</label>
+      </div>
+      <div class="user-box">
+        <input type="password" name="" required="">
+        <label>Mot de passe</label>
+      </div>
+      <div class="user-box">
+        <input type="password" name="" required="">
+        <label>Confirmation de mot de passe...</label>
+      </div>
+      <!-- <a href="#" (click)="navigateToPage()">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        Connexion
+      </a> -->
+      
+  <ion-button expand="block"  fill="clear">
+    <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        Créez votre compte
+  </ion-button>
+    </form>
+    <div class="social-media">
+			<span>
+				<ion-label color="light">Ou Créez votre compte avec</ion-label>
+			</span>
+			<!-- <a class="fab fa-facebook-f" href="https://facebook.com/uzcho" target="blank_"></a> -->
+      <ion-button expand="block" fill="clear">
+        <ion-icon slot="start" name="logo-github"></ion-icon>
+        <!-- GitHub -->
+      </ion-button>
+			<!-- <a class="fab fa-twitter" href="https://twitter.com/uzcho_" target="blank_"></a> -->
+      <ion-button expand="block" fill="clear" >
+        <ion-icon slot="start" name="logo-facebook"></ion-icon>
+        <!-- Facebook -->
+      </ion-button>
+      <!-- <a class="fab fa-instagram" href="https://www.instagram.com/uzcho_" target="blank_"></a> -->
+      <ion-button expand="block" fill="clear" >
+        <ion-icon slot="start" name="logo-google"></ion-icon>
+        <!-- Google -->
+      </ion-button>
+      <!-- <a class="fab fa-codepen" href="https://codepen.io/uzcho_" target="blank_"></a> -->
+      <br>
+    <ion-button  slot="end" fill="clear" color="light">Où connectez-vous</ion-button>
+		</div>
+	
+
+  </div>
+</html>
+</ion-content>
+<ion-footer [translucent]="true">
+  <ion-toolbar>
+    <ion-title>@2022 Youssouf Djiré</ion-title>
+  </ion-toolbar>
+</ion-footer> 

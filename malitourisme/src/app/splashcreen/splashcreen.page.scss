@@ -1,0 +1,86 @@
+.bg-image{
+    //background-image: url('./../../assets/img/mali.jpeg'); 
+    // --background-repeat: no-repeat;
+    // --background-position: center;
+    // --background-size: contain;
+    
+    --background: linear-gradient(0deg, rgba(0,0,0,0.7), rgba(0,0,0,0.1)),
+     url('./../../assets/img/mali.png') no-repeat center center / cover ;
+}
+ 
+.no-scroll .scroll-content {
+    overflow: hidden;
+}
+// ion-content .bg-image{
+//     --background: url(../../assets/img/LogoMaliTourist.png) 0 0/100% 100% no-repeat;
+// }
+// ion-img{
+//     //height: 50%;
+//     //width: 40;
+//     //position: relative;
+//     //top: 50%;
+//     //width: 90%;
+//     //height: 20%;
+//     //left: 81px;
+//     //top: 30%;
+//     //display: flex;
+//     //flex-flow: column-reverse;
+// //background: url(LogoMaliTourist-removebg-preview (1).png);
+//     //border-radius: 15px;
+//     --size: 140px;
+//     --border-radius: 14px;
+
+// }
+
+ion-img::part(image){
+    
+    border-radius: 20px;
+    
+  }
+.img {
+    // height: 20%;
+    //  border-top-left-radius: 46px;
+    //  border-top-right-radius: 46px;
+        // border-radius: 10px;
+    // border: 1px solid var(--grayColor);
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    // margin-top: 10%;
+     margin: auto;
+     height: 20%; 
+     width: 20%;
+     position: relative; 
+     top: 15%;
+
+   // border: 2px solid #fff;
+    // border-radius: 50%;
+    // box-shadow: 0 0 5px gray;
+    // display: block;
+  }
+//   .button{
+//     position: absolute;
+//     top: 50%;
+//     // left: 40%;
+//     justify-content: center!important;
+//      align-items:center;
+//     // display: block;
+//     // width: 20%;
+//     // display:block;
+//     // width: 50%
+//     // padding-left: 50%;
+//     // padding-right: 50%;    
+//     // width:85%;
+//     // right: 50%;
+// }
+// ion-row{
+//     align-items: center
+// }
+ion-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    width: 30%;
+    margin-top: 15%;
+}

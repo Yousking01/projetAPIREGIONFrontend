@@ -1,0 +1,228 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Accueil</ion-title>
+
+
+    <ion-searchbar></ion-searchbar>
+
+    <ion-button slot="end">
+      <ion-menu-button menu="main-menu"></ion-menu-button>
+    </ion-button>
+  </ion-toolbar>
+</ion-header>
+<!-- pour faire le slider -->
+<!-- <ion-slides [options]="option" class="ion-margin-top" size-xl="3"  size-lg="6" size-md="6" size-sm="12" size-xs="12">
+    
+    
+            <ion-slide>
+              <ion-card>
+                <!-- <img src="../../assets/img/01.jpg"> -->
+<!-- <img alt="Silhouette of mountains" src="../../assets/img/kayes.jpeg" />
+              </ion-card>
+            </ion-slide> -->
+
+<!-- <ion-slide>
+              <ion-card>
+                <img alt="Silhouette of mountains" src="../../assets/img/Kayes2.jpg" />
+              </ion-card>
+            </ion-slide>
+        
+            <ion-slide>
+              <ion-card>
+                <img alt="Silhouette of mountains" src="../../assets/img/Kayes3.jpg" />
+              </ion-card>
+            </ion-slide>
+        
+            <ion-slide>
+              <ion-card>
+                <img alt="Silhouette of mountains" src="../../assets/img/Hotel_de_Ville_de_Kayes.jpg" />
+              </ion-card>
+            </ion-slide>
+        
+            <ion-slide>
+              <ion-card>
+                <img alt="Silhouette of mountains" src="../../assets/img/kayes5.jpg" />
+              </ion-card>
+            </ion-slide> -->
+
+
+<!-- </ion-slides> -->
+
+<ion-content class="bg">
+  <ion-grid>
+    <ion-row>
+      <ion-col size-xl="3" size-lg="6" size-md="6" size-sm="12" size-xs="12" *ngFor="let liste of listeRegion">
+        <ion-card  class="card">
+          <img alt="Silhouette of mountains" src="../../assets/{{liste.images}}" />
+          <ion-card-header >
+            <ion-card-title class="region">{{liste.nomregions}}</ion-card-title>
+            <ion-card-subtitle>Description :</ion-card-subtitle>
+            <ion-card-content>
+              <!-- Kayes est une grande ville et une commune de l’ouest du Mali à 495 km au nord-ouest de Bamako, sur les rives du fleuve Sénégal. Elle est la capitale de la première région administrative et le chef-lieu du cercle qui porte son nom. -->
+              {{liste.description}}<br>
+
+            </ion-card-content>
+          </ion-card-header>
+          <ion-button expand="block" class="voirplus" [routerLink]="[url,liste.id_regions]">Voir Plus</ion-button>
+
+        </ion-card>
+      </ion-col>
+      <ion-col>
+        <ion-col>
+          <ion-card>
+            <img alt="Silhouette of mountains" src="../../assets/img/mali-carte.png" />
+            <br> <br>
+
+            <ion-card-header>
+              <ion-card-title>Le MALI</ion-card-title>
+              <ion-card-subtitle>Bamako la capitale</ion-card-subtitle>
+            </ion-card-header>
+
+            <ion-card-content>
+              Le Mali, en forme longue la république du Mali, est un État d'Afrique de l'Ouest, frontalier de la
+              Mauritanie à l'ouest, de l'Algérie au nord-nord-est, du Niger à l'est, du Burkina Faso et de la Côte
+              d'Ivoire au sud-sud-ouest, de la Guinée au sud-ouest et du Sénégal à l'ouest-sud-ouest.
+              <p> <br> Superficie : 1,24 million km²
+                <br>Date de fondation : 22 septembre 1960
+                <br>Indicatif téléphonique : +223
+                <br>Population : 20,86 millions (2021) Banque mondiale
+                <br>Devise : Franc CFA
+                <br>Langue officielle : Français
+              </p>
+            </ion-card-content>
+          </ion-card>
+        </ion-col>
+
+      </ion-col>
+
+      <!-- <ion-col size-xl="3"  size-lg="6" size-md="6" size-sm="12" size-xs="12">
+        <br>
+          <br> 
+        
+          
+
+         
+
+
+           <img alt="Silhouette of mountains" src="../../assets/img/Hotel_de_Ville_de_Kayes.jpg" />
+          <ion-card-header>
+            <ion-card-title class="region">Région 1</ion-card-title>
+            <ion-card-subtitle>Kayes</ion-card-subtitle>
+            <ion-card-content>
+              Kayes est une grande ville et une commune de l’ouest du Mali à 495 km au nord-ouest de Bamako, sur les rives du fleuve Sénégal. Elle est la capitale de la première région administrative et le chef-lieu du cercle qui porte son nom.
+              <br> <br>
+              <ion-button expand="block" class="voirplus" (click)="navigateToPage()">Voir Plus</ion-button>
+             
+        </ion-card-content>
+          </ion-card-header> 
+       </ion-col> -->
+
+      <!-- <ion-col size-xl="3"  size-lg="6" size-md="6" size-sm="12" size-xs="12">
+        <br>
+        
+          
+
+         
+
+
+           <img alt="Silhouette of mountains" src="../../assets/img/Hotel_de_Ville_de_Kayes.jpg" />
+          <ion-card-header>
+            <ion-card-title class="region">Région 1</ion-card-title>
+            <ion-card-subtitle>Kayes</ion-card-subtitle>
+            <ion-card-content>
+              Kayes est une grande ville et une commune de l’ouest du Mali à 495 km au nord-ouest de Bamako, sur les rives du fleuve Sénégal. Elle est la capitale de la première région administrative et le chef-lieu du cercle qui porte son nom.
+              <br> <br>
+              <ion-button expand="block" class="voirplus" (click)="navigateToPage()">Voir Plus</ion-button>
+              
+        </ion-card-content>
+          </ion-card-header> 
+       </ion-col> -->
+
+
+      <!-- le Mali description -->
+
+      <ion-row>
+
+        <!-- <ion-col size-xl="3"  size-lg="6" size-md="6" size-sm="12" size-xs="12">
+            
+              
+    
+             
+    
+    
+               <img alt="Silhouette of mountains" src="../../assets/img/Hotel_de_Ville_de_Kayes.jpg" />
+              <ion-card-header>
+                <ion-card-title class="region">Région 1</ion-card-title>
+                <ion-card-subtitle>Kayes</ion-card-subtitle>
+                <ion-card-content>
+                  Kayes est une grande ville et une commune de l’ouest du Mali à 495 km au nord-ouest de Bamako, sur les rives du fleuve Sénégal. Elle est la capitale de la première région administrative et le chef-lieu du cercle qui porte son nom.
+                  <br> <br>
+                  <ion-button expand="block" class="voirplus" (click)="navigateToPage()">Voir Plus</ion-button>
+                  
+            </ion-card-content>
+              </ion-card-header> 
+           </ion-col> -->
+
+
+        <!-- <ion-col size-xl="3"  size-lg="6" size-md="6" size-sm="12" size-xs="12">
+            
+    
+             
+    
+    
+               <img alt="Silhouette of mountains" src="../../assets/img/Hotel_de_Ville_de_Kayes.jpg" />
+              <ion-card-header>
+                <ion-card-title class="region">Région 1</ion-card-title>
+                <ion-card-subtitle>Kayes</ion-card-subtitle>
+                <ion-card-content>
+                  Kayes est une grande ville et une commune de l’ouest du Mali à 495 km au nord-ouest de Bamako, sur les rives du fleuve Sénégal. Elle est la capitale de la première région administrative et le chef-lieu du cercle qui porte son nom.
+                  <br> <br>
+                  <ion-button expand="block" class="voirplus" (click)="navigateToPage()">Voir Plus</ion-button>
+                  
+            </ion-card-content>
+              </ion-card-header> 
+           </ion-col> -->
+
+        <!-- <ion-col size-xl="3"  size-lg="6" size-md="6" size-sm="12" size-xs="12">
+            
+              
+    
+             
+    
+    
+               <img alt="Silhouette of mountains" src="../../assets/img/Hotel_de_Ville_de_Kayes.jpg" />
+              <ion-card-header>
+                <ion-card-title class="region">Région 1</ion-card-title>
+                <ion-card-subtitle>Kayes</ion-card-subtitle>
+                <ion-card-content>
+                  Kayes est une grande ville et une commune de l’ouest du Mali à 495 km au nord-ouest de Bamako, sur les rives du fleuve Sénégal. Elle est la capitale de la première région administrative et le chef-lieu du cercle qui porte son nom.
+                  <br> <br>
+                  <ion-button expand="block" class="voirplus" >Voir Plus</ion-button>
+                  
+            </ion-card-content>
+              </ion-card-header> 
+           </ion-col> -->
+        <!-- le Mali -->
+
+      </ion-row>
+    </ion-row>
+
+  </ion-grid>
+
+
+
+
+</ion-content>
+<ion-footer [translucent]="true">
+  <ion-toolbar>
+    <ion-title>@2022 Youssouf Djiré</ion-title>
+  </ion-toolbar>
+</ion-footer>
+
+
+
+
+
+<!-- </ion-col>
+</ion-row>
+</ion-grid> -->

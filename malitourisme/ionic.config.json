@@ -1,0 +1,7 @@
+{
+  "name": "malitourisme",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}

@@ -1,0 +1,145 @@
+<!-- <ion-content> -->
+
+  <!-- <ion-text color="primary">
+    <h1 class="welcome">Bienvenue à nouveau, veuillez entrer vos coordonnées:</h1>
+  </ion-text>
+  <br>
+  <ion-item class="ion-item">
+    <ion-label color="light"></ion-label>
+    <ion-input  type="mail" placeholder="Adresse email"></ion-input>
+  </ion-item>
+  <br>
+  <ion-item class="ion-item">
+    <ion-label color="light"></ion-label>
+    <ion-input  type="password" placeholder="Mot de passe"></ion-input>
+  </ion-item>
+  <br>
+  <ion-item lines="none" class="mp">
+    <ion-button color="dark" slot="end" fill="clear">Mot de passe oublié ?</ion-button>
+  </ion-item>
+  <br>
+  <ion-button class="btn1" color="primary">se connecter</ion-button> -->
+
+
+    <!-- <ion-item class="orA"></ion-item> -->
+    
+    <!-- <ion-item class="or"></ion-item> -->
+    <!-- <p class="p">or</p>
+    <ion-icon name="logo-github" class="github"></ion-icon>
+    <ion-icon name="logo-facebook" class="facebook"></ion-icon>
+    <ion-icon name="logo-google" class="google"></ion-icon>
+
+    <ion-item lines="none" class="creer">
+    <p class="pascompte">Vous n’avez pas de compte ?</p>
+    <br> <ion-button color="dark" class="Comp" slot="end" fill="clear">Créer un Compte</ion-button>
+    </ion-item> -->
+
+    <!-- <ion-item class="lien">
+      <p class="p">Or</p>
+       <ion-icon name="logo-google" class="google"></ion-icon>
+       <ion-icon name="logo-facebook" class="facebook"></ion-icon>
+       <ion-icon name="logo-github" class="github"></ion-icon>
+     </ion-item>
+       <br>
+     <ion-item >
+         <span class="pascompte">Vous avez un compte ?</span>
+         <ion-button  class="Comp" slot="end" fill="clear">Connectez-vous</ion-button>
+     </ion-item>  -->
+  
+<!-- </ion-content> -->
+
+<!-- <ion-header>
+  <ion-toolbar>
+    <ion-title>Connexion</ion-title> -->
+    <ion-button slot="end" class="menu">
+      <ion-menu-button menu="main-menu"></ion-menu-button>
+    </ion-button>
+  <!-- </ion-toolbar>
+</ion-header> -->
+
+<ion-content class="ion-padding">
+  <br>
+  <br>
+
+ 
+
+
+ 
+
+<html>
+  
+  <div class="login-box">
+    <!-- <h2>Page de Connexion</h2> -->
+    <h1 class="welcome">Bienvenue à nouveau, veuillez entrer vos coordonnées:</h1>
+    <form 
+    name="form"
+    #f="ngForm"
+    (ngSubmit)="f.form.valid && onSubmit()">
+      <div class="user-box">
+        <input type="text" name="username" id="username" required="" [(ngModel)]="form.username" #username="ngModel">
+        <label >Nom d'utilisateur</label>
+        <div class="form_error" *ngIf="username.errors && f.submitted">
+          Nom d'utilisateur obligatoire !!!
+        </div>
+      </div>
+      <div class="user-box">
+        <input type="password" name="password" required="" [(ngModel)]="form.password" #password="ngModel" id="password">
+        <label>Mot de passe</label>
+        <div class="form_error" *ngIf="password.errors && f.submitted">
+         
+          Mot de passe obligatoire !!!
+
+        </div>
+      </div>
+      <!-- <a href="#" (click)="navigateToPage()">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        Connexion
+      </a> -->
+      <!-- (click)="login()" -->
+  <ion-button expand="block" (click)="onSubmit()" fill="clear" class="connexion">
+    <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        Connexion
+  </ion-button>
+    </form>
+    <div class="social-media">
+			<span>
+				<ion-label color="light">Ou connectez-vous avec</ion-label>
+			</span>
+			<!-- <a class="fab fa-facebook-f" href="https://facebook.com/uzcho" target="blank_"></a> -->
+      <ion-button expand="block" fill="clear">
+        <ion-icon slot="start" name="logo-github"></ion-icon>
+        <!-- GitHub -->
+      </ion-button>
+			<!-- <a class="fab fa-twitter" href="https://twitter.com/uzcho_" target="blank_"></a> -->
+      <ion-button expand="block" fill="clear" >
+        <ion-icon slot="start" name="logo-facebook"></ion-icon>
+        <!-- Facebook -->
+      </ion-button>
+      <!-- <a class="fab fa-instagram" href="https://www.instagram.com/uzcho_" target="blank_"></a> -->
+      <ion-button expand="block" fill="clear" >
+        <ion-icon slot="start" name="logo-google"></ion-icon>
+        <!-- Google -->
+      </ion-button>
+      <!-- <a class="fab fa-codepen" href="https://codepen.io/uzcho_" target="blank_"></a> -->
+      <br>
+    <ion-button  slot="end" fill="clear" color="light">Créer un Compte ?</ion-button>
+		</div>
+	
+
+  </div>
+</html>
+</ion-content>
+<ion-footer [translucent]="true">
+  <ion-toolbar>
+    <ion-title>@2022 Youssouf Djiré</ion-title>
+  </ion-toolbar>
+</ion-footer> 
+
+
+

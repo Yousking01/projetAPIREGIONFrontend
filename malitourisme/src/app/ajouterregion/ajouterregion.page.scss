@@ -1,0 +1,77 @@
+ion-toolbar{
+    --background: linear-gradient(0deg, rgba(0,0,0,0.7), rgba(0,0,0,0.1)),
+       url('./../../assets/img/drapeaumali.jpg') no-repeat center center / cover ;
+    color: #FFFF;
+      }
+      .iconr{
+        // display: flex;
+        // align-items: flex-end;
+        // justify-content: end;
+        // margin: auto;
+        // left: 60%;
+        // width: 20%;
+        // position: relative;
+        // left: 30%;
+    // width: 64px;
+    // height: 30px;
+    // left: 375px;
+    // top: 204px;
+    // margin: auto;
+    position: relative;
+    margin: auto;
+    width: 40%;
+    text-align: center;
+    background: #4087FC;
+    border-radius: 15px;
+    display: flex;
+        align-items: center;
+      }
+      .image{
+        margin: auto;
+        position: relative;
+        width: 70%;
+        height: 50%;
+        border-radius: 15px 15px 15px 15px;
+        
+        display: flex;
+        align-items: center;
+      }
+      h1{
+        color: #FFFF;
+        font-size: 36px;
+        text-align: center;
+      }
+      .col1{
+        // margin: auto;
+        // position: relative;
+        // width: 70%;
+        // height: 50%;
+        border-radius: 15px 15px 15px 15px;
+        box-shadow: 0 0 5px gray;
+        height: 100%;
+        // width: 30%;
+        justify-content: center;
+        // margin: auto;
+        margin-top: 12.5%;
+        background: #FFFF;
+        margin-left: 5px;
+        
+      }
+      .img{
+        border-radius: 15px 15px 15px 15px;
+        // box-shadow: 0 0 5px gray;
+        position: relative;
+        // height: 10%;
+        // height: 50%;
+        
+      }
+      ion-content{
+        // --background: #4087FC;
+        --background: linear-gradient(0deg, rgba(0,0,0,0.7), rgba(0,0,0,0.1)),
+       url('./../../assets/img/Tombouctou1.jpg') no-repeat center center / cover ;
+    
+      }
+      ion-toolbar{
+        --background: #0D8BFF;
+        color: #FFFF;
+          }
